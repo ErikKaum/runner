@@ -1,0 +1,7 @@
+/target
+.venv/
+venv/
+env/
+.env/
+.DS_Store
+*.egg-info/
