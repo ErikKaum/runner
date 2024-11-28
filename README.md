@@ -73,7 +73,7 @@ Enjoy 🏎️
 ## Under the hood ⚒️
 
 ### How does this work?
-The WASM+WASI runtime is provided by [Wasmtime](https://docs.wasmtime.dev/) as a crate. To run Python code in this sandbox, we need to compile the Python interpreter (CPython in this case) to the `wasm32-unknown-wasi` target. The `wasm32-unknown-wasi` target is currently at Tier 2, but you still have to do the compilation yourself. Fortunately, there's a [good guide](https://docs.wasmtime.dev/) on setting everything up in a devcontainer. To spare you the hassle, I’ve included the compiled Python interpreter in the repo, despite the large file size.
+The WASM+WASI runtime is provided by [Wasmtime](https://docs.wasmtime.dev/) as a crate. To run Python code in this sandbox, we need to compile the Python interpreter (CPython in this case) to the `wasm32-unknown-wasi` target. The `wasm32-unknown-wasi` target is currently at Tier 2, but you still have to do the compilation yourself. Fortunately, there's a [good guide](https://devguide.python.org/getting-started/setup-building/#wasi) on setting everything up in a devcontainer. To spare you the hassle, I’ve included the compiled Python interpreter in the repo, despite the large file size.
 
 If you're unfamiliar with target triplets, Brett Cannon has a [good blog post](https://snarky.ca/webassembly-and-its-platform-targets/) explaining them, particularly in the context of Python and `wasm32-unknown-wasi`.
 
